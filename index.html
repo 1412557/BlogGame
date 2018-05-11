@@ -21,35 +21,39 @@
                 <span class="top-link"><a href="./login.html">Login</a></span>
             </div>
         </div>
-        <div class="header">
-            <div class="main-head">
-                <div class="container relative">
-                    <div class="logo"><a href="./index.html"><img src="./images/dota-logo.png" alt="Dota2 Logo"></a></div>
-                    <div class="playnow-btn"><a href="./download.html"><img src="./images/getdota.jpg" alt=""></a></div>
-                </div>
-            </div>
-            <div class="main-nav menu">
-                <div class="container">
-                    <ul>
-                        <li><a href="./index.html">News</a></li>
-                        <li><a href="">Store</a></li>
-                        <li><a href="">Heropedia</a></li>
-                        <li><a href="">Tournament</a></li>
-                        <li><div class="search-form form-inline"><i class="fa fa-search"></i> <input type="text" class="form-control"></div></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="sub-nav menu">
-                <div class="container">
-                    <ul>
-                        <li><a href="">Updates</a></li>
-                        <li><a href="">Changelogs</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Conpediums</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+		<div id="stick-wrapper">
+			<div class="header" id="id-header">
+				<div class="main-head">
+					<div class="container relative">
+						<div class="row">
+							<div class="logo col-sm-4"><a href="#"><img src="./images/dota-logo.png" alt="Dota2 Logo"></a></div>
+							<div class="search-form form-inline col-sm-4"><i class="fa fa-search"></i> <input type="text" class="form-control"></div>
+							<div class="playnow-btn col-sm-4"><a href="./download.html"><img src="./images/getdota.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-nav menu">
+					<div class="container">
+						<ul>
+							<li><a href="./index.html">News</a></li>
+							<li><a href="">Store</a></li>
+							<li><a href="">Heropedia</a></li>
+							<li><a href="">Tournament</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-nav menu">
+					<div class="container">
+						<ul>
+							<li><a href="">Updates</a></li>
+							<li><a href="">Changelogs</a></li>
+							<li><a href="">Events</a></li>
+							<li><a href="">Conpediums</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="main">
             <div class="featured">
                 <div class="ft-banner" style="background: url('./images/pudge-arcana.jpg') center center;">
@@ -83,7 +87,7 @@
                                     </div>
                                     <div class="post-content col-sm-8">
                                         <div class="post-caption">
-                                            <a href="./article2.html"><h3>The International 2018 tickets and vanue</h3></a>
+                                            <a href="./article.html"><h3>The International 2018 tickets and vanue</h3></a>
                                             <span class="post-meta">March 15, 2018 - Dota Team</span>
                                         </div>
                                         <div class="post-except"><p>For the first time ever, the battle for the Aegis of Champions will be waged on Canadian soil, as The International Dota 2 Championships invite the world’s top Dota teams to face off at Rogers Arena in Vancouver, British Columbia on Monday, August 20th through Saturday, August 25th.</p></div>
@@ -95,34 +99,10 @@
                                     </div>
                                     <div class="post-content col-sm-8">
                                         <div class="post-caption">
-                                            <a href="./article2.html"><h3>Introducing Dota Plus</h3></a>
+                                            <a href="./article.html"><h3>Introducing Dota Plus</h3></a>
                                             <span class="post-meta">March 15, 2018 - Dota Team</span>
                                         </div>
                                         <div class="post-except"><p>Today’s update unveils Dota Plus, a new monthly subscription service designed to help you get the most out of every match you play.</p></div>
-                                    </div>
-                                </div>
-                                <div class="post-item row">
-                                    <div class="post-thumb col-sm-4 align-self-center">
-                                        <img src="./images/battle_pass.png" alt="">
-                                    </div>
-                                    <div class="post-content col-sm-8">
-                                        <div class="post-caption">
-                                            <a href="./article2.html"><h3>The International 2018 Battle Pass</h3></a>
-                                            <span class="post-meta">May 9, 2018 - Dota Team</span>
-                                        </div>
-                                        <div class="post-except"><p>The International Battle Pass has arrived. Prepare to dig into the heart of the Dota summer season and unearth a rich vein of new and classic features, new game modes, and heaps of exclusive rewards. As is tradition, 25% of all Battle Pass sales go directly to The International prize pool.</p></div>
-                                    </div>
-                                </div>
-                                <div class="post-item row">
-                                    <div class="post-thumb col-sm-4 align-self-center">
-                                        <img src="./images/Musical_melee.jpg" alt="">
-                                    </div>
-                                    <div class="post-content col-sm-8">
-                                        <div class="post-caption">
-                                            <a href="./article2.html"><h3>The Musical Melee at the Sundered Moon</h3></a>
-                                            <span class="post-meta">Febuary 8, 2018 - Dota Team</span>
-                                        </div>
-                                        <div class="post-except"><p>The Sundered Moon has always been more famous for its nightly brawls than its seasonal brews. But tonight a new kind of live entertainment steps in, as Awolnation bring their musical stylings to every hero’s favorite watering hole. Can the spirit of music overcome Ancient-sized grudges? Find out in Awolnation’s new Dota 2 music video, animated by the three-time winner of the Dota 2 Short Film Contest.</p></div>
                                     </div>
                                 </div>
                                 <div class="post-item">
@@ -153,5 +133,22 @@
             </div>
         </div>
     </div>
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("id-header");
+	var defHeight = header.offsetHeight;
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		header.classList.add("sticky");
+		var wrapper = document.getElementById("stick-wrapper").setAttribute("style","height:"+defHeight+"px;");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
 </body>
 </html>

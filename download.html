@@ -13,33 +13,37 @@
     <div class="wrapper">
         <div class="top-banner clearfix">
             <div class="float-left copyright">
-                <span class="cpy-item"><a href="#"><img src="./images/valve_white.png" alt="Valve logo"></a></span>
-                <span class="cpy-item"><a href="#"><img src="./images/steam_white.png" alt="Steam logo"></a></span>
+                <span class="cpy-item"><img src="./images/valve_white.png" alt="Valve logo"></span>
+                <span class="cpy-item"><img src="./images/steam_white.png" alt="Steam logo"></span>
             </div>
             <div class="float-right customer">
                 <span class="top-link"><a href="#">Support</a></span>
                 <span class="top-link"><a href="./login.html">Login</a></span>
             </div>
         </div>
-        <div class="header">
-            <div class="main-head">
-                <div class="container relative">
-                    <div class="logo"><a href="./index.html"><img src="./images/dota-logo.png" alt="Dota2 Logo"></a></div>
-                    <div class="playnow-btn"><a href="./download.html"><img src="./images/getdota.jpg" alt=""></a></div>
-                </div>
-            </div>
-            <div class="main-nav menu">
-                <div class="container">
-                    <ul>
-                        <li><a href="./index.html">News</a></li>
-                        <li><a href="">Store</a></li>
-                        <li><a href="">Heropedia</a></li>
-                        <li><a href="">Tournament</a></li>
-                        <li><div class="search-form form-inline"><i class="fa fa-search"></i> <input type="text" class="form-control"></div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <div id="stick-wrapper">
+			<div class="header" id="id-header">
+				<div class="main-head">
+					<div class="container relative">
+						<div class="row">
+							<div class="logo col-sm-4"><a href="#"><img src="./images/dota-logo.png" alt="Dota2 Logo"></a></div>
+							<div class="search-form form-inline col-sm-4"><i class="fa fa-search"></i> <input type="text" class="form-control"></div>
+							<div class="playnow-btn col-sm-4"><a href="./download.html"><img src="./images/getdota.jpg" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-nav menu">
+					<div class="container">
+						<ul>
+							<li><a href="./index.html">News</a></li>
+							<li><a href="">Store</a></li>
+							<li><a href="">Heropedia</a></li>
+							<li><a href="">Tournament</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="main">
             <div class="main-content">
                 <div class="container">
@@ -113,5 +117,22 @@
             </div>
         </div>
     </div>
+	<script>
+	
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("id-header");
+	var defHeight = header.offsetHeight;
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		header.classList.add("sticky");
+		var wrapper = document.getElementById("stick-wrapper").setAttribute("style","height:"+defHeight+"px;");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
 </body>
 </html>
